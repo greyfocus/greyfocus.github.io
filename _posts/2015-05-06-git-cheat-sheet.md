@@ -8,7 +8,9 @@ categories: git
 Below are some basic commands for working with GIT repositories using the
 command line client. They are useful if you're just starting out with Git, or if
 you keep forgetting the exact parameters.
-<!-break->
+
+<!-- more -->
+
 * [Basic Workflow](#basic-workflow)
 * [Repository History](#repository-history)
 * [Branching](#branching)

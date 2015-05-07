@@ -9,7 +9,7 @@ After reading a bit about static site generators I've decided to give them a
 try. One of the most popular choices is Jekyll, which is also the engine behind
 GitHub Pages. 
 
-<!-break->
+<!-- more -->
 
 One of the main disadvantages of static site generators is that they require a
 minimal setup on the local machine, in order to edit posts.  Jekyll is based on
@@ -28,11 +28,17 @@ The following steps describe how to install Jekyll on Windows using Vagrant.
     vagrant plugin install vagrant-vbguest 
     ```
 
-4.  Launch Vagrant
+4.  Clone this git repo which contains the Vagrant configuration:
 
-	``` bash
+    ``` bash
+    git clone https://github.com/greyfocus/vagrant-jekyll.git
+    ```
+
+5.  Launch Vagrant
+
+	  ``` bash
     vagrant up
-	``` 
+	  ``` 
 
 ## Workflow
  
