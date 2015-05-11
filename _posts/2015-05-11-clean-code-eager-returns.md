@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clean Code - Eager returns and pitfalls
+title: Clean Code - Pitfalls of Eager Return
 date: 2015-05-11 21:28
 categories: java, coding
 ---
@@ -31,7 +31,7 @@ does and what it's complexity level is.
 The complexity level can be reduced very often by inverting conditions and
 exiting early from the method or code block.
 
-For example, let's take the following code:
+For example, let's take the following Java code:
 
 ``` java
   public List<String> retrieveAuthorNames(Book book) {
@@ -120,9 +120,6 @@ complexity. Wait... weren't we supposed to write a method that counts
 "published" books?
 
 ### Conclusion
-All things in life should be taken in moderation - and this applies very well to
-software development.
-
 Principles are good, since they are based on the hard earned experience from the 
 past, but they should never be applied blindly.
 
