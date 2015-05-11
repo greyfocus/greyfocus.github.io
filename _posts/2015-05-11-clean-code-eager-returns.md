@@ -10,6 +10,8 @@ general principles which may vary depending on the programming language. This
 will ensure that the code will be uniform, easier to understand and follow a
 standard. At least this is the ideal.
 
+<!-- more -->
+
 But all things in life should be in moderation - if you exaggerate something,
 there will be something else, lurking behind the corner, that will exaggerate at
 you later. 
