@@ -1,0 +1,95 @@
+---
+layout: post
+title: "Integrate the schema.org microformat with Jekyll"
+categories: jekyll
+keywords: jekyll, microformat, seo
+---
+
+There are a lot of articles written about search engine optimization (SEO) and
+various techniques that can be used to boost the results. The most basic way of
+improving the rankings is to make sure that content can be understood correctly
+by crawlers.
+
+<!-- more -->
+
+There's a joint effort among the top search engines to create a common format
+for describing the semantic web: [schema.org](http://schema.org).
+
+### How does it work?
+By taking advantage of the microdata feature of HTML5, it's possible to
+associate metadata about the content that's present on the page. This allows
+content editors to specify the type of content, license, creation
+date, images and a lot of other attributes by associating a few key properties
+with the corresponding HTML tags.
+
+The most important schema.org attributes are:
+
+ * `itemscope` - defines the scope of the other two properties, whether they apply
+   to the current entity or to a new one
+ * `itemtype` - the entity type (as a namespace URL) 
+ * `itemprop` - the name of the property
+
+For more details, be sure to check the [official schema.org documentation](https://schema.org/docs/gs.html#microdata_embedded).
+
+### How can we use it with Jekyll?
+It turns out that the schema.org attributes can be integrated very easily with
+Jekyll.
+
+#### Individual posts
+Let's start with the individual posts. If you're using the default Jekyll setup,
+the layout of the posts is most likely defined in the `_layouts/post.html` file.
+
+We need to include the `itemscope`, `itemtype` and `itemprop` attributes as
+follows:
+
+``` html
+{% raw %}
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    {{ content }}
+  </article>
+
+  {% include comments.html %}
+</div>
+{% endraw %}
+```
+
+> Note: Be sure to consult the [full list of attributes for the BlogPosting type](https://schema.org/BlogPosting)
+
+#### Index or archive page
+Most blogs usually have an index or archive page, which can be further enhanced
+about each individual post. The following example describes the process for the
+index page, but it can be applied in a similar way to any page that includes
+links to blog posts.
+
+``` html
+{% raw %}
+  <ul class="post-list" itemscope itemtype="http://schema.org/Blog">
+    {% for post in site.posts %}
+      <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <span class="post-meta"><time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></span>
+        <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">{{ post.title }}</span></a>
+        </h2>
+        
+        <div itemprop="description">{{ post.excerpt }}</div>
+     </li>
+    {% endfor %}
+  </ul> 
+{% endraw %}
+```
+
+#### Test the microformat attributes
+Google has provided a testing tool that covers both the basic SEO principles,
+but also the structured data that follows the schema.org specifications:
+[Structured Data Tool](https://developers.google.com/structured-data/testing-tool/).
+
+
