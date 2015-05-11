@@ -19,7 +19,7 @@ you later.
 Today we will talk about eager returns and what it can cause when it's enforced
 blindly.
 
-# Background: What does "eager return" mean?
+### Background: What does "eager return" mean?
 
 A very simple way of figuring out the complexity of a method is to count the
 number of indentation levels inside it. Assuming that the code is properly
@@ -84,7 +84,7 @@ But for now, let's look at the advantages:
    can `book` be `null``?
 
 
-# The problem
+### The problem
 
 While all principles are meant to improve the quality, they usually fail 
 miserably when they're abused.
@@ -119,14 +119,14 @@ err... sorry, to discard unpublished books, just for the sake of "reducing"
 complexity. Wait... weren't we supposed to write a method that counts
 "published" books?
 
-# Conclusion
+### Conclusion
 All things in life should be taken in moderation - and this applies very well to
 software development.
 
 Principles are good, since they are based on the hard earned experience from the 
 past, but they should never be applied blindly.
 
-# Notes
+### Notes
 The last method can be written in just a line by taking advantage of the new
 features from Java 8:
 
