@@ -11,13 +11,6 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-         {% if post.categories != empty %}
-        <span class="post-meta"> / 
-                {% for category in post.categories %}
-                #{{ category }}
-                {% endfor %}
-        </span>
-        {% endif %}
        {{ post.excerpt }}
      </li>
     {% endfor %}
