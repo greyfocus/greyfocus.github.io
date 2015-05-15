@@ -3,6 +3,7 @@ layout: post
 title: "Git Cheat Sheet"
 date: 2015-05-06 23:40:15
 categories: git
+keywords: git, cheat sheet, command line
 ---
 
 Below are some basic commands for working with GIT repositories using the

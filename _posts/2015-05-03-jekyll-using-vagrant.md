@@ -3,6 +3,7 @@ layout: post
 title:  "Running Jekyll on Windows using Vagrant"
 date:   2015-05-03 00:10:19
 categories: jekyll
+keywords: jekyll, vagrant, windows, static site generator 
 ---
 
 After reading a bit about static site generators I've decided to give them a

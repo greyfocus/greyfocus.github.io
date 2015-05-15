@@ -3,6 +3,7 @@ layout: post
 title: Clean Code - Pitfalls of Eager Return
 date: 2015-05-11 21:28
 categories: java, coding
+keywords: java, software development, coding, clean code, best practices
 ---
 
 When working in a team, it's very important to establish a coding style and some
