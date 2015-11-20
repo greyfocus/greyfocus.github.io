@@ -207,6 +207,6 @@ git ls-files -z | xargs -0 rm
 git checkout .
 ```
 
-(Thanks to [Charles
-Bailey](https://stackoverflow.com/questions/1510798/trying-to-fix-line-endings-with-git-filter-branch-but-having-no-luck/1511273#1511273) for this solution.)
+(Thanks to [Charles Bailey]
+(https://stackoverflow.com/questions/1510798/trying-to-fix-line-endings-with-git-filter-branch-but-having-no-luck/1511273#1511273) for this solution.)
 

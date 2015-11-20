@@ -2,7 +2,7 @@
 layout: post
 title: Clean Code - Pitfalls of Eager Return
 date: 2015-05-11 21:28
-categories: java, coding
+categories: java
 keywords: java, software development, coding, clean code, best practices
 ---
 
