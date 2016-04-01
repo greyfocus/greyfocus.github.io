@@ -56,7 +56,7 @@ from the board)
 At the moment, I've found two IDEs that can be used for nodemcu Lua development.
 
 #### LuaLoader
-GitHub: https://github.com/GeoNomad/LuaLoader
+GitHub: <https://github.com/GeoNomad/LuaLoader>
 
 A very basic and low level IDE that can be used to interact with the nodemcu
 development board. It allows you to upload Lua files, execute them and also
@@ -67,7 +67,7 @@ missing features. It also has problems in uploading Lua files, which can cause
 strange errors later on.
 
 #### ESPlorer
-GitHub: https://github.com/4refr0nt/ESPlorer
+GitHub: <https://github.com/4refr0nt/ESPlorer>
 
 After struggling for a few days with LuaLoader, I've decided to try out
 ESPlorer. The difference was huge - the interface is more intuitive and it
