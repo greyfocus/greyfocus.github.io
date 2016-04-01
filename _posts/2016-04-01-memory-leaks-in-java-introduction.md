@@ -2,6 +2,7 @@
 layout: post
 title: Memory Leaks in Java - Introduction
 date: 2016-04-01 23:12
+category: java
 keywords: java, performance
 ---
 
