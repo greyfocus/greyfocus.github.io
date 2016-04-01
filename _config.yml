@@ -5,9 +5,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://greyfocus.com" # the base hostname & protocol for your site
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
-
 permalink: /:year/:month/:title/
 
 # Navigation
