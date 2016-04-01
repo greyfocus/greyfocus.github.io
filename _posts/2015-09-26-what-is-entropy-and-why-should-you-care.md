@@ -43,9 +43,11 @@ Servers are usually running headless, with no keyboard or mouse attached to them
 The options depend a lot on the operating system. Entropy is often mentioned in the Linux environment, since there are more options available. Some operating systems avoid the performance issues caused by blocking random number sources and expose only non blocking ones (e.g. Windows). Unfortunately this raises the risk of using predictable random numbers for cryptography, thus affecting the overall security of the system and the data involved.
 
 On Linux environments, you can determine the available entropy with:
+
 ``` bash
 # cat /proc/sys/kernel/random/entropy_avail
 ```
+
 A low number, less than 100-200 is a sign of trouble. Performance is usually affected in this case, which will usually manifest in slow response times for encrypted network connections.
 
 There are two ways of improving the existing entropy:
@@ -58,9 +60,11 @@ Hardware level solutions are always preferable, but they increase the cost and t
 For software level random number generators there are multiple options. In Linux environments, `haveged`is usually used. The setup is quite simple,
 
 For Fedora,
+
 ``` bash
-# yum install haveged
-# chkconfig haveged on
+yum install haveged
+chkconfig haveged on
 ```
+
 For other distributions, install the `haveged` package using your package manager and make sure it starts up at boot.
 

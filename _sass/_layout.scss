@@ -210,19 +210,26 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
+    h1 {
+        font-size: 26px;
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
     h2 {
-        font-size: 32px;
+        font-size: 22px;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 18px;
         }
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 18px;
 
         @include media-query($on-laptop) {
-            font-size: 22px;
+            font-size: 14px;
         }
     }
 

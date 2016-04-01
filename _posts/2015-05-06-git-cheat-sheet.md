@@ -84,17 +84,17 @@ git checkout -- <name-of-file>
 ```
 
 Note: The above command brings the specified file to the current index state (if any). To completely revert all changes, you will need to either run 
+
 ``` bash
 git reset <name-of-file>
 git clean -f
 ```
 
 You can also reset the entire tree to the last commit
+
 ``` bash
 git reset --hard
 ```
-
-
 
 ### <a name="branching"></a>Branching
 
