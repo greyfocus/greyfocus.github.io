@@ -82,7 +82,7 @@ But for now, let's look at the advantages:
    we actually have a book
  * the maximum indentation level has decreased by one - the remaining method is
    easier to understand and follow, since we don't need to keep asking ourselves,
-   can `book` be `null``?
+   can `book` be `null`?
 
 
 ### The problem
