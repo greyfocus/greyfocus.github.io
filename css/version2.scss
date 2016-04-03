@@ -8,14 +8,42 @@
 
   font-family: 'Playfair Display', serif;
   font-size: 24px;
-  color: #a2a2a2;
+  letter-spacing: 4px;
+  // color: #a2a2a2;
+  color: #000000;
+  padding-right: 20px;
 }
 
 .logo .first {
   font-size: 32px;
-  color: #ffffff;
+  color: #999999;
 }
 
 header .navbar {
   border-radius: 0;
+}
+//
+// .post-list, .post-list item {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+//
+.home .post-meta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.post-meta .post-category {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  padding: .5em 0 .5em 0;
+  background: #d43131;
+  color: #ffffff;
+}
+
+.post-meta .post-date {
+  background: #eeeeee;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
