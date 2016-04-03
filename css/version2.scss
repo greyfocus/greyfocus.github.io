@@ -2,13 +2,24 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  // line-height: 2em;
+}
+
+p {
+  margin: 1em 0 1em 0;
+}
+
 .logo {
   display: inline-block;
   // padding: 0.5em;
 
-  font-family: 'Playfair Display', serif;
+  // font-family: 'Playfair Display', serif;
+  font-family: Garamond, serif;
   font-size: 24px;
-  letter-spacing: 4px;
+  // letter-spacing: 4px;
   // color: #a2a2a2;
   color: #000000;
   padding-right: 20px;
@@ -22,6 +33,12 @@
 header .navbar {
   border-radius: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  // font-family: 'Merriweather', serif;
+  font-family: 'Allegreya', serif;
+}
+
 //
 // .post-list, .post-list item {
 //   list-style: none;
@@ -34,8 +51,12 @@ header .navbar {
   margin-top: 20px;
 }
 
+.home .row {
+  margin-bottom: 4em;
+}
+
 .post-meta .post-category {
-  font-family: 'Playfair Display', serif;
+  // font-family: 'Playfair Display', serif;
   font-size: 24px;
   padding: .5em 0 .5em 0;
   background: #d43131;
@@ -43,7 +64,7 @@ header .navbar {
 }
 
 .post-meta .post-date {
-  background: #eeeeee;
+  background: #f4f4f4;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
