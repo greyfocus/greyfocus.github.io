@@ -2,23 +2,83 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
-.logo {
-  display: inline-block;
-  padding: 1em;
-  background: #333333;
-
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  color: #a2a2a2;
+body {
+  // font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 2em;
 }
 
-.logo .first {
-  font-size: 44px;
-  color: #ffffff;
-}
-
-.post-list, .post-list item {
-  list-style: none;
-  margin: 0;
+// .post-content p,
+// .description p {
+article p {
+  margin: 3em 0 1em 0;
   padding: 0;
+  text-align: justify;
+  // padding: 2em 0 0 0;
+  // line-height: 1.5em;
 }
+
+article blockquote {
+  padding: .5em 3em;
+}
+
+article blockquote p:first-of-type {
+  margin-top: 0;
+}
+
+.side-menu {
+  text-align: center;
+  padding: 0rem 4rem;
+  font-size: 28px;
+}
+
+.side-menu .nav-pills {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.side-menu .nav-pills a {
+  color: #cccccc;
+  text-transform: lowercase;
+}
+
+.side-menu .nav-pills > li > a {
+  padding: .5rem 0;
+}
+
+.side-menu .nav-pills > li > a,
+.side-menu .nav-pills > li > a:focus,
+.side-menu .nav-pills > li > a:hover {
+  background-color: transparent;
+  color: #999999
+}
+
+.side-menu .nav-pills > li.active > a,
+.side-menu .nav-pills > li.active > a:focus,
+.side-menu .nav-pills > li.active > a:hover {
+  background-color: transparent;
+  color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  // font-family: 'Merriweather', serif;
+  // font-family: 'Allegreya', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Voltaire', sans-serif;;
+  padding-top: 2em;
+}
+
+.post-meta {
+  color: #999;
+  font-size: .8em;
+}
+
+.post-meta .date, .post-meta .category {
+  padding-right: 1em;
+}
+
+blockquote {
+  font-size: inherit;
+}
+

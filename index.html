@@ -6,43 +6,21 @@ layout: default
 
   <div class="post-list" itemscope itemtype="http://schema.org/Blog">
     {% for post in paginator.posts %}
-    <div class="row" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-      <div class="col-md-2 post-meta">
-        <div class="post-category" itemprop="category">
-          {% if post.category == blank or post.category == nil %}
-          ?
-          {% else %}
-          {{ post.category }}
-          {% endif %}</div>
-        <div class="post-date">
-          <span class="glyphicon glyphicon-calendar"></span> <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></div>
-      </div>
-      <div class="col-md-8">
-        <h2>
+    <div itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">{{ post.title }}</span></a>
-        </h2>
+      </h2>
 
-        <div itemprop="description">{{ post.excerpt }}</div>
+      <div class="post-meta">
+        {% if post.category  %}
+        <span class="category"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> {{ post.category }}</span>
+        {% endif %}
+        <span class="date"><span class="glyphicon glyphicon-calendar" aria-hidden"true"></span> <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y "}}</time></span>
       </div>
+      <div itemprop="description">{{ post.excerpt }}</div>
     </div>
     {% endfor %}
   </div>
 
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
-  </div>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  {% include pager.html %}
 </div>
