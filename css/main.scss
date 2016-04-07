@@ -9,14 +9,10 @@ body {
   line-height: 2em;
 }
 
-// .post-content p,
-// .description p {
 article p {
   margin: 3em 0 1em 0;
   padding: 0;
   text-align: justify;
-  // padding: 2em 0 0 0;
-  // line-height: 1.5em;
 }
 
 article blockquote {
@@ -29,7 +25,8 @@ article blockquote p:first-of-type {
 
 .side-menu {
   text-align: center;
-  padding: 0rem 4rem;
+  // padding: 0rem 4rem;
+  padding-right: 5rem;
   font-size: 28px;
 }
 
@@ -47,11 +44,14 @@ article blockquote p:first-of-type {
   padding: .5rem 0;
 }
 
-.side-menu .nav-pills > li > a,
-.side-menu .nav-pills > li > a:focus,
-.side-menu .nav-pills > li > a:hover {
+.side-menu .nav-pills > li > a {
   background-color: transparent;
   color: #999999
+}
+
+.side-menu .nav-pills > li > a:focus,
+.side-menu .nav-pills > li > a:hover {
+  color: #333333;
 }
 
 .side-menu .nav-pills > li.active > a,
@@ -81,4 +81,3 @@ h1, h2, h3, h4, h5, h6 {
 blockquote {
   font-size: inherit;
 }
-
