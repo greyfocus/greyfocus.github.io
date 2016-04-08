@@ -27,3 +27,24 @@ article {
 .post-meta .date, .post-meta .category {
   padding-right: 1em;
 }
+
+.pagination {
+  li {
+    span {
+      color: $main-color;
+      // border-color: $main-color;
+
+      #{$a-tags} {
+        color: $main-color;
+      }
+    }
+  }
+  .active {
+    span, span:focus, span:hover {
+      background-color: $main-color;
+      color: $highlight-color;
+      border-color: $main-color;
+    }
+  }
+
+}
