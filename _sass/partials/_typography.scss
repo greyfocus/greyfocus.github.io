@@ -1,0 +1,22 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $base-text-color
+}
+
+#{$a-tags} {
+  color: $base-anchor-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font-family;
+  padding-top: 1.5em;
+  color: $secondary-color;
+}
+
+h1 {
+  padding-left: .5em;
+  border-left: .5em solid #f0e4dd;
+}

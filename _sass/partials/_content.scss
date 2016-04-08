@@ -1,0 +1,29 @@
+article {
+  margin-bottom: 3em;
+
+  p {
+    // margin: 1em 0 1em 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  blockquote {
+    padding: .5em 3em;
+    p:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul li {
+    list-style: square;
+  }
+}
+
+.post-meta {
+  color: $meta-text-color;
+  font-size: $meta-font-size;
+}
+
+.post-meta .date, .post-meta .category {
+  padding-right: 1em;
+}

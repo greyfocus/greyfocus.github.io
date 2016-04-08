@@ -1,0 +1,33 @@
+// $main-color: #333333;
+$main-color: #3e536e;
+// $main-color-shade-1: #999;
+$main-color-shade-1: #849da8;
+$secondary-color: #849da8;
+
+$font-weight-light: 100;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-weight: $font-weight-regular;
+$base-font-size: 16px;
+$base-text-color: $main-color;
+$base-line-height: 2em;
+$base-anchor-color: $secondary-color;
+
+$title-font-family: 'Josefin Sans', sans-serif;
+
+$meta-text-color: $main-color-shade-1;
+$meta-font-size: .8em;
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+$spacing-unit: 30px;
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}

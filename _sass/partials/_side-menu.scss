@@ -1,0 +1,31 @@
+.side-menu {
+  text-align: right;
+  // padding: 0rem 4rem;
+  padding-right: 5rem;
+  font-size: 28px;
+
+  .nav-pills {
+    margin-top: 1rem;
+    text-align: right;
+
+    li {
+      #{$a-tags} {
+        background-color: transparent;
+        color: $main-color-shade-1;
+
+        text-transform: lowercase;
+        padding: .5rem, 0;
+      }
+
+      #{$a-tags-hover} {
+        color: $main-color;
+      }
+
+      &.active {
+        #{$a-tags} {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}

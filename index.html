@@ -7,9 +7,9 @@ layout: default
   <div class="post-list" itemscope itemtype="http://schema.org/Blog">
     {% for post in paginator.posts %}
     <div itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-      <h2>
+      <h1>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">{{ post.title }}</span></a>
-      </h2>
+      </h1>
 
       <div class="post-meta">
         {% if post.category  %}
