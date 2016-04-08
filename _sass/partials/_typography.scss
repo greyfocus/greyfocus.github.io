@@ -18,5 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   padding-left: .5em;
-  border-left: .5em solid #f0e4dd;
+  border-left: .5em solid $secondary-color;
+}
+
+blockquote {
+  border-left: 5px solid $highlight-color;
 }

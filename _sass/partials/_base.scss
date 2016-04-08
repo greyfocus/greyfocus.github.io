@@ -1,8 +1,9 @@
 // $main-color: #333333;
-$main-color: #3e536e;
+$main-color: #50495c;
 // $main-color-shade-1: #999;
-$main-color-shade-1: #849da8;
-$secondary-color: #849da8;
+$main-color-shade-1: #afafcc;
+$secondary-color: #947e8a;
+$highlight-color: #d6c0d1;
 
 $font-weight-light: 100;
 $font-weight-regular: 400;
@@ -30,4 +31,8 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+body {
+  // background-color: #eff4f7;
 }
