@@ -8,7 +8,7 @@ keywords: java, performance
 
 While memory leaks in the Java language are different than in languages with
 manual memory allocation, they can still become challenges to developers -
-especially when they are discovered in the late phases of the project. 
+especially when they are discovered in the late phases of the project.
 
 <!-- more -->
 
@@ -18,7 +18,7 @@ leak is
 
 > (...) a type of resource leak that occurs when a computer program
 > incorrectly manages memory allocations in such a way that memory which is no
-> longer needed is not released. 
+> longer needed is not released.
 
 While we do not directly allocate memory in Java, we do it indirectly - every
 time an object is created, some memory is allocated for it. In order for the
@@ -43,7 +43,7 @@ A somewhat better definition of a memory leak in Java, would be:
 > A memory leak happens when there is a reference to a short lived object from
 > a long-lived context (another object, static context, etc.), which causes
 > the memory usage of an application to increase over time, until it runs out
-> of memory. 
+> of memory.
 
 # Difference Between Memory Leaks and Poor Memory Usage
 Memory leaks are buzz words. They are keywords that you probably want to use
@@ -60,15 +60,15 @@ following:
 - a normal pattern in the lifecycle of the garbage collector
 - poor memory usage due to how the data is modelled
 
-In Java applications, the heap memory is allocated during a Garbage collector
+In Java applications, the heap memory is deallocated during a Garbage collector
 run. An object is eligible for garbage collection if,
 
 - it is not a GC root
 - it is not accessible from GC root references (direct or transitive)
 
-> **What is a GC root?** 
+> **What is a GC root?**
 > GC roots are special objects that are not garbage collected and keep
-> references to the objects used by the application flows. 
+> references to the objects used by the application flows.
 >
 > - **Class** - classes loaded by the system class loader
 > - **Thread** - live thread
@@ -93,7 +93,7 @@ areas of memory that can be reclaimable - and they will be reclaimed at some
 later point.
 
 # Signs of a memory leak
-While it's by not means exhaustive, the following list illustrates some 
+While it's by not means exhaustive, the following list illustrates some
 common signs of a memory leak:
 
 - the used memory steadily increases over a long period of time (e.g. days,
@@ -115,4 +115,3 @@ VisualVM or even jConsole.
 For now, this post got a bit longer than I anticipated initially. As time
 permits, I will try to write a follow-up with some hints on how to approach
 memory leaks.
-
