@@ -7,7 +7,9 @@ keywords: linux, networkmanager, wifi
 
 The `NetworkManager.service` provides a simple way to configure WiFi networking on Linux systems, but it can cause issues when running in a custom setup (in my case with multiple network adapters).
 
-The instructions below should work for most Linux distributions that use systemd (e.g. Debian, Raspbian, Kali Linux, etc.).
+The following steps will disable the NetworkManager and allow configuring the WiFi through `wpa_supplicant`. They should work for most Linux distributions that use systemd (e.g. Debian, Raspbian, Kali Linux, etc.).
+
+<!-- more -->
 
 ### 1 Disable the NetworkManager service
 ```bash
